@@ -1,0 +1,26 @@
+{
+  "name": "famemma",
+  "version": "1.0.0",
+  "description": "FamemmaBOT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iZykemPL/Zykem-FameMMA.git"
+  },
+  "keywords": [
+    "Famemma",
+    "BOT"
+  ],
+  "author": "Zykem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iZykemPL/Zykem-FameMMA/issues"
+  },
+  "homepage": "https://github.com/iZykemPL/Zykem-FameMMA#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}
