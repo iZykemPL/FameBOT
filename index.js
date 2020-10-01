@@ -27,6 +27,18 @@ client.on('guildMemberAdd', (member) => {
 client.on('message', async message => {
 
     if(message.author.bot) return;
+    if(message.content.toLowerCase() === '!brakpozewu' && message.channel.id === '761330585327108116'){
+
+        message.channel.send("Ja wojtek gola muwie rze zykem moze strimowac fame mma");
+
+    }
+
+
+})
+
+client.on('message', async message => {
+
+    if(message.author.bot) return;
     if(message.content.toLowerCase() === '!zweryfikuj' && message.channel.id === '761319630626750495') {
 
         const role = message.guild.roles.cache.get('761319944205238292');
