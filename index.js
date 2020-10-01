@@ -33,6 +33,23 @@ client.on('message', async message => {
 
     }
 
+client.on('message', async message => {
+
+    if(message.author.bot) return;
+    if(message.content.toLowerCase() === '!freeppv' && message.channel.id === '761319191340384297'){
+
+        const embed = new Discord.RichEmbed()
+.setTitle("Ogloszenie")
+.setAuthor("FameMMA 8")
+.setColor("#1364cd")
+.setDescription("Podczas Gali zostana rozdane 3 Konta PPV")
+.setFooter("ZyKeM dEv")
+    message.channel.send({embed})
+
+    }
+
+})
+
 
 })
 
