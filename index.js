@@ -27,7 +27,7 @@ client.on('guildMemberAdd', (member) => {
 client.on('message', async message => {
 
     if(message.author.bot) return;
-    if(message.content.toLowerCase() === '!brakpozewu' && message.channel.id === '761330585327108116'){
+    if(message.content.toLowerCase() === '!brakpozewu' && message.channel.id === '761705758932729916'){
 
         message.channel.send("Ja wojtek gola muwie rze zykem moze strimowac fame mma");
 
@@ -36,7 +36,7 @@ client.on('message', async message => {
 client.on('message', async message => {
 
     if(message.author.bot) return;
-    if(message.content.toLowerCase() === '!freeppv' && message.channel.id === '761319191340384297'){
+    if(message.content.toLowerCase() === '!freeppv' && message.channel.id === '761705813675999254'){
 
         const embed = new Discord.MessageEmbed()
         .setTitle("Ogloszenie")
@@ -53,7 +53,7 @@ client.on('message', async message => {
 
 })
 
-client.on('message', async message => {
+/*client.on('message', async message => {
 
     if(message.author.bot) return;
     if(message.content.toLowerCase() === '!zweryfikuj' && message.channel.id === '761319630626750495') {
@@ -65,8 +65,8 @@ client.on('message', async message => {
                 message.member.send("**BRAWO**\n > Pomyslnie sie zweryfikowales na naszym Serwerze!")
                 console.log(message.member.user.tag + " sie zweryfikowal!")
                 message.delete();
-            }
-            catch(err)
+              }
+             catch(err)
             {
                 console.log(err);
             }
@@ -74,7 +74,7 @@ client.on('message', async message => {
         
     }
 
-})
+/*})*/
 
 client.on("message", async message => {
 
