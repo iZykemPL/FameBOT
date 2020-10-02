@@ -61,6 +61,7 @@ client.on('message', async message => {
         .setColor("#A87C7C")
         .setDescription("Wymagania Partnerstwa:\n**1.** + 50 Osob | Wiadomosc na #partnerstwa, Ty dajesz ping, my nie\n**2.** + 100 Osob | Wiadomosc na #partnerstwa, Ping za Ping\n**3.** + 200 Osob | Stale Partnerstwo, Pingi oraz Konkursy")
         .setFooter("Informacje o Partnerstwach")
+    message.channel.send({embed})
 
     }
 
