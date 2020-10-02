@@ -87,7 +87,7 @@ client.on("message", async message => {
         .setDescription("Kliknij na reakcje aby sie zweryfikowac")
         .setFooter("ZyKeM dEv")
         let msgembed = await message.channel.send(embed)
-        msgembed.react('761545667465576458')
+        msgembed.react('683962791551303711')
 
     }
 
