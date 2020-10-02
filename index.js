@@ -112,4 +112,4 @@ client.on("messageReactionAdd", async (reaction, user) =>{
 
 })
 
-client.login(process.env.token)
+client.login("NzYxNzAwNzYxNTQwODg2NTQ4.X3ebHQ.Zl0eh4E-9vsOi7mRJeB3Z93BdlA")
