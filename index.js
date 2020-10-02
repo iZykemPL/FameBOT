@@ -50,6 +50,22 @@ client.on('message', async message => {
 
 })
 
+client.on('message', async message => {
+
+    if(message.author.bot) return;
+    if(message.content.toLowerCase() === '!wymaganiapartner' && message.channel.id === '761707711619792896') {
+
+        const embed = new Discord.MessageEmbed()
+        .setTitle("Wymagania Partnerstwa oraz Poziomy Partnerstwa")
+        .setAuthor("Partnerstwo")
+        .setColor("#A87C7C")
+        .setDescription("Wymagania Partnerstwa:\n**1.** + 50 Osob | Wiadomosc na #partnerstwa, Ty dajesz ping, my nie\n**2.** + 100 Osob | Wiadomosc na #partnerstwa, Ping za Ping\n**3.** + 200 Osob | Stale Partnerstwo, Pingi oraz Konkursy")
+        .setFooter("Informacje o Partnerstwach")
+
+    }
+
+})
+
 
 })
 
