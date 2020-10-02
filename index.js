@@ -76,4 +76,21 @@ client.on('message', async message => {
 
 })
 
+client.on("message", async message => {
+
+    if(message.content.toLowerCase() === '!weryfikacjaembed') {
+
+        const embed = new Discord.MessageEmbed()
+        .setTitle("")
+        .setAuthor("Weryfikacja")
+        .setColor("#cc99ff")
+        .setDescription("Kliknij na reakcje aby sie zweryfikowac")
+        .setFooter("ZyKeM dEv")
+        let msgembed = await message.channel.send(embed)
+        msgembed.react('✅')
+
+    }
+
+})
+
 client.login(process.env.token)
