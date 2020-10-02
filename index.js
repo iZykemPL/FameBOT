@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
 const welcomeChannel = '761319091252232202'
 
@@ -88,6 +88,25 @@ client.on("message", async message => {
         .setFooter("ZyKeM dEv")
         let msgembed = await message.channel.send(embed)
         msgembed.react('✅')
+
+    }
+
+})
+
+client.on("messageReactionAdd", async (reaction, user) =>{
+
+    if(reaction.message.partial) await reaction.message.fetch();
+
+    if(user.bot) return;
+    if(!reaction.message.guild) return;
+
+    if(reaction.message.channel.id === '761543160701911070') {
+
+        if(reaction.emoji.name === '✅') {
+
+            await reaction.message.guild.members.cache.get(user.id).roles.add("761319944205238292")
+
+        }
 
     }
 
